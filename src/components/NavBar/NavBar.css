@@ -1,0 +1,35 @@
+    .nav_bar{
+        width: 250px;
+        height: 300px;
+        background-color: #fff;
+        border: 2px solid #000;
+        position: absolute;
+        right: 100px;
+        bottom: 200px;
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        gap: 20px;
+        font-size: 1.3rem;
+    }
+
+    .nav_item{
+        &::after{
+            content: "\\\\";
+            opacity: 0;
+            transition: all .2s ease;
+        }
+    }
+
+    .nav_item:hover{
+        &::after{
+            content: "\\\\";
+            opacity: 1;
+        }
+    }
+
+    .nav_item:active{
+        opacity: .5;
+    }

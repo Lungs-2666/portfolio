@@ -22,9 +22,7 @@
                             Hi there!   <br />
                             I am a <RotatingTextComponent/> <br />
                             from Pyatigorsk, Russia.
-                            Passionate about creating web- & fullstack-applications. 
-                            <br /> <br />
-                            etc.
+                            Passionate about creating web- & fullstack-applications.
                         </p>
 
                         <NavBar />
@@ -53,44 +51,47 @@
                         <OrbitImagesUsage />
                     </section>
 
-                    <section className={styles.projects_page}>
+                    <section id="featured_projects" className={styles.projects_page}>
                         <h2 className={styles.projects_heading}> Featured Projects: </h2>
 
                         <div className={styles.projects_cards}>
                             <ProjectCard 
-                                cardWidth='58%'
-                                cardImg='/noimage'
+                                cardWidth='60%'
+                                cardImg='/screenshots/echo-link.png'
                                 cardTitle='Echo Link'
                                 cardDesc='Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit.
                                 Molestiae, praesentium.'
                                 cardLink='https://github.com/Lungs-2666/echo-link'
-                                cardLinkLive='' //link from OnRender
+                                cardLinkLive='https://echo-link-c8to.onrender.com'
+                                isLive={true}
                             />
 
                             <ProjectCard 
-                                cardWidth='40%'
-                                cardImg='/noimage'
+                                cardWidth='60%'
+                                cardImg='/screenshots/navigator.png'
+                                cardTitle='Career Navigator'
+                                cardDesc='Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit.
+                                Molestiae, praesentium.'
+                                cardLink='https://github.com/Lungs-2666/Career-Navigator'
+                                cardLinkLive='' //link from Vercel or Render
+                                isLive={false}
+                            />
+
+                            <ProjectCard 
+                                cardWidth='60%'
+                                cardImg='/screenshots/fit-day.png'
                                 cardTitle='Fit Day'
                                 cardDesc='Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit.
                                 Molestiae, praesentium.'
                                 cardLink='https://github.com/Lungs-2666/fit_day'
-                                cardLinkLive='' //link from GitHub pages
+                                cardLinkLive='https://fit-fycki7w32-focuusmes-projects.vercel.app/'
+                                isLive={true}
                             />
 
-                            <ProjectCard 
-                                cardWidth='48%'
-                                cardImg='/noimage'
-                                cardTitle='Career Navigator'
-                                cardDesc='Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit.
-                                Molestiae, praesentium.'
-                                cardLink='https://github.com/Lungs-2666/fit_day'
-                                cardLinkLive='' //link from Vercel or OnRender
-                            />
-
-                            <ProjectCard 
+                            {/* <ProjectCard 
                                 cardWidth='50%'
                                 cardImg='/noimage'
                                 cardTitle='Healing Recipes' 
@@ -99,23 +100,24 @@
                                 Molestiae, praesentium.'
                                 cardLink='https://github.com/Lungs-2666/HealingRecipes_app'
                                 cardLinkLive='' //link from "onrender.com"
-                            />
+                            /> */}
                         </div>
                     </section>
 
-                    <section className={styles.contacts_page}>
+                    <section id="contacts" className={styles.contacts_page}>
                         <h2 className={styles.contacts_heading}> Contacts: </h2>
 
-                        <div className={styles.contacts_grp_1}>
-                            <Link href="" className={styles.contacts_link}> telegram </Link>
-                            <Link href="" className={styles.contacts_link}> whatsApp </Link>
-                            <Link href="" className={styles.contacts_link}> timthedeveloper111@gmail.com </Link>
-                        </div>
+                        <div className={styles.contacts_main_grp}>
+                            <div className={styles.contacts_grp_1}>
+                                <Link href="" className={styles.contacts_link}> telegram </Link>
+                                <Link href="" className={styles.contacts_link}> timthedeveloper111@gmail.com </Link>
+                            </div>
 
-                        <div className={styles.contacts_grp_2}>
-                            <Link href="" className={styles.contacts_link}> gitHub </Link>
-                            <Link href="" className={styles.contacts_link}> linkedIn </Link>
-                            <Link href="" className={styles.contacts_link}> blog </Link>
+                            <div className={styles.contacts_grp_2}>
+                                <Link href="https://github.com/Lungs-2666" className={styles.contacts_link}> gitHub </Link>
+                                <Link href="" className={styles.contacts_link}> linkedIn </Link>
+                                <Link href="" className={styles.contacts_link}> blog </Link>
+                            </div>
                         </div>
 
 

@@ -1,27 +1,25 @@
     .project_card{
-        /* width: PROPS; */
-        height: 50%;
+        height: 70%;
         border: 2px solid #d6cc9e;
         background-color: var(--primary-color);
         display: flex;
-        /* flex-direction: column; */
         align-items: flex-end;
         justify-content: space-between;
-        /* gap: 20px; */
         position: relative;
         padding: 50px;
         background-color: #fff;
     }
 
     .card_img{
-        width: 100%;
+        width: 90%;
         height: 60%;
         /* border: 1px solid red; */
         text-align: center;
         align-content: center;
         position: absolute;
         top: 0;
-        left: 0;
+        left: calc(50% - 45%);
+        padding: 15px;
     }
 
     .card_title{
@@ -66,4 +64,12 @@
             &:hover{
                 background-color: var(--secondary-color);
             }
+    }
+
+
+
+    @media (max-width: 1280px){
+        .project_card{
+            width: 100% !important;
+        }
     }

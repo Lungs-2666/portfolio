@@ -80,3 +80,10 @@
     padding-bottom: 0.25rem;
   }
 }
+
+@media (max-width: 440px){
+  .rotatingText{
+    font-size: 1.6rem;
+    width: 250px;
+  }
+}

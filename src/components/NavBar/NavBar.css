@@ -33,3 +33,11 @@
     .nav_item:active{
         opacity: .5;
     }
+
+
+
+    @media (max-width: 440px){
+        .nav_bar{
+            display: none;
+        }
+    }

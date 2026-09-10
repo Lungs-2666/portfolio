@@ -110,7 +110,7 @@
                         <div className={styles.contacts_main_grp}>
                             <div className={styles.contacts_grp_1}>
                                 <Link href="" className={styles.contacts_link}> telegram </Link>
-                                <Link href="" className={styles.contacts_link}> timthedeveloper111@gmail.com </Link>
+                                <Link href="mailto:timthedeveloper111@gmail.com" className={styles.contacts_link}> timthedeveloper111@gmail.com </Link>
                             </div>
 
                             <div className={styles.contacts_grp_2}>
